@@ -51,3 +51,19 @@ The process of removing words that are commonly used in a language but do not co
 ## 4.  Stemming
 
 The process of reducing inflected (or sometimes derived) words to their word stem, base, or root form—generally a written word form.
+
+<br>
+<br>
+
+### Update : I packaged this app into a Docker image and pushed it to a [DockerHub Repository](https://hub.docker.com/repository/docker/ahmednani/sentiment-analysis-web-app/general)
+<br>
+To pull and run this image locally you can execute the following lines (docker login required):<br>
+```
+docker pull ahmednani/sentiment-analysis-web-app
+```
+<br>then :<br>
+```
+docker run -p 5000:5000 -d ahmednani/sentiment-analysis-web-app
+```
+
+<br>and the web app should be up in [localhost](https://localhost:5000)
